@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black and Gold Analytics Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-text">
+                <h1>
+                    <img src="BGA_logo.jpeg" alt="Black and Gold Analytics" width="50" height="50">
+                    Black And Gold Analytics
+                </h1>
+            </div>
+            <div class="menu-icon">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        </script>
+    <section id="about">
+        <h2>About Our Club</h2>
+        <p>This is a short paragraph about our school club. Here you can add your mission statement, goals, and other relevant information.</p>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <p>No upcoming events. Check back soon!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 School Club</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
