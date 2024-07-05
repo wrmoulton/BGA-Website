@@ -1,0 +1,127 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Aligns children to space between */
+    align-items: center; /* Centers children vertically */
+    margin: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* This will ensure spacing between logo/text and menu icon */
+}
+
+.logo-text h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the logo and the text */
+    font-size: 25px; /* Adjust as necessary */
+    color: #ffffff;
+    text-transform: uppercase;
+    /* Remove text-align: left; if it's not necessary */
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column; /* Ensures the bars are stacked vertically */
+    align-items: flex-end; /* Aligns the bars to the right */
+    margin-right: 20px;
+    /* Your existing styles seem fine, but you might not need flex-direction: column; or align-items: flex-end; anymore */
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+section h2{
+    color: #ffffff;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    color: #a38b4d;
+    text-decoration: none;
+}
+
+section {
+    margin: 0;
+    padding: 20px;
+    font-size: large;
+    background-color: #000000;
+}
+
+section h2 {
+    margin-bottom: px;
+    color: #ffffff
+}
+section p{
+    color: #ffffff
+}
+#contact-form label,
+#contact-form input,
+#contact-form textarea {
+    display: block;
+    margin-bottom: px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+#contact-form button {
+    background-color: #33333300;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
